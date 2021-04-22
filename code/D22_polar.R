@@ -1,6 +1,8 @@
 library(tidyverse)
 library(gganimate)
 
+#Data downloaded as a .csv file at : https://www.v-dem.net/en/analysis/VariableGraph/
+
 p <- pol %>%
   ggplot() +
   geom_line(aes(x=Year, y=`*Balkans`, color="Balkans")) +
